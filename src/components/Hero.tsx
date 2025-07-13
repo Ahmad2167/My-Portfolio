@@ -53,6 +53,14 @@ export function Hero() {
               <Button
                 variant="outline"
                 size="lg"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/resume.pdf';
+                  link.download = 'Ahmad_Ashraf_Resume.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
                 className="text-lg px-8 py-4"
               >
                 <Download className="mr-2 h-6 w-6" />
