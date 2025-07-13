@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Portfolio Design System - Ahmad Ashraf */
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --primary: 214 88% 27%;        /* Navy Blue */
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 214 88% 22%;
+    --accent: 43 90% 50%;          /* Orange */
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 43 90% 45%;
+    
+    /* Base Colors */
+    --background: 220 13% 97%;      /* Light gray background */
+    --foreground: 215 28% 17%;
+
+    /* UI Elements */
+    --card: 0 0% 100%;
+    --card-foreground: 215 28% 17%;
+    --card-hover: 220 13% 95%;
+
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 215 28% 17%;
+    
+    --muted: 220 13% 95%;
+    --muted-foreground: 215 16% 47%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 28% 17%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 214 88% 27%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(214 88% 35%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 13% 98%));
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Theme Colors */
+    --background: 215 28% 8%;       /* Dark navy background */
+    --foreground: 0 0% 95%;
+    
+    /* Dark UI Elements */
+    --card: 215 28% 12%;
+    --card-foreground: 0 0% 95%;
+    --card-hover: 215 28% 15%;
+
+    --primary: 214 88% 50%;         /* Brighter navy for dark mode */
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 214 88% 55%;
+    
+    --accent: 43 90% 55%;           /* Brighter orange for dark mode */
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 43 90% 60%;
+
+    --secondary: 215 28% 18%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 215 28% 15%;
+    --muted-foreground: 215 16% 70%;
+
+    --popover: 215 28% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 28% 18%;
+    --input: 215 28% 18%;
+    --ring: 214 88% 50%;
+    
+    /* Dark Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(214 88% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-card: linear-gradient(145deg, hsl(215 28% 12%), hsl(215 28% 15%));
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
